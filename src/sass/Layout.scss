@@ -1,0 +1,234 @@
+.layout-container {
+    // display: grid;
+    // grid-template-columns: 29vw 1vw 70vw;
+    // grid-template-rows: 100vh;
+    // grid-template-areas: "header . carousel";
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(#563371, #170c1f);
+    overflow: hidden;
+}
+
+.site-headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        width: 25vw;
+        height: auto;
+    }
+    
+}
+
+.site-headline {
+    font-family: source-code-pro, monospace;
+    font-weight: 500;
+}
+
+.page-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+.page-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+}
+
+.work-sans {
+    font-family: 'Work Sans'
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-left {
+    width: 40vw;
+    height: 50vh;
+    border-radius: 12px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    overflow: hidden;
+
+    video {
+        object-fit: center;
+        width: 100%;
+        height: auto;
+        outline: none;
+        background: none;
+    }
+}
+
+.arrow-down {
+    margin-top: 5vh;
+    width: 75px;
+    height: 75px;
+    background: none;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.arrow-right {
+    width: 75px;
+    height: 75px;
+    background: none;
+    transition: all .2s ease-in-out;
+    margin-left: 2vw;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.video {
+    width: 40vw;
+    height: 50vh;
+    border-radius: 12px;
+    background-color: black;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.header-container {
+    grid-area: header;
+}
+
+.carousel-container {
+    grid-area: carousel;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-text {
+    font-family: 'Work Sans';
+    font-size: calc(3vw + 12px);
+}
+
+.cta-button {
+    padding: calc(1vh + 4px) calc(1vw + 4px);
+    border: 4px solid white;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: source-code-pro, monospace;
+
+    &:hover {
+        transform: scale(1.05) translateZ(0);
+        backface-visibility: hidden;
+        background-color: white;
+        color: black;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .content-left {
+        width: 60vw;
+        height: 40vh;
+    }
+
+    .video {
+        width: 60vw;
+        height: 40vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .site-headers {
+    
+        h1 {
+            width: 60vw;
+            height: auto;
+        }
+    }
+
+    .site-headline {
+        font-size: 40px;
+    }
+
+    .content-left {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .video {
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .arrow-down {
+        margin-top: 5vh;
+        width: 50px;
+        height: 50px;
+    }
+
+    .cta-text {
+        font-size: 46px;
+    }
+    
+    .arrow-right {
+        width: 50px;
+        height: 50px;
+        margin-left: 2vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .site-headers {
+    
+        h1 {
+            width: 80vw;
+            height: auto;
+        }
+    }
+
+    .site-headline {
+        font-size: 24px;
+        margin: 20px 10px;
+        text-align: center;
+    }
+
+    .content-left {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .video {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .arrow-down {
+        margin-top: 5vh;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .arrow-right {
+        width: 30px;
+        height: 30px;
+        margin-left: 2vw;
+    }
+}
