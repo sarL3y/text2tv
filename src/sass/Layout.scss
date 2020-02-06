@@ -1,29 +1,40 @@
 .layout-container {
-    // display: grid;
-    // grid-template-columns: 29vw 1vw 70vw;
-    // grid-template-rows: 100vh;
-    // grid-template-areas: "header . carousel";
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100vw;
     margin: 0;
     padding: 0;
+    background: -o-radial-gradient(#563371, #170c1f);
     background: radial-gradient(#563371, #170c1f);
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 .site-headers {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 
     h1 {
         width: 25vw;
         height: auto;
     }
-    
 }
 
 .site-headline {
@@ -32,41 +43,66 @@
 }
 
 .page-one {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100vh;
     width: auto;
 }
 
 .page-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100vh;
     width: auto;
 }
 
 .work-sans {
-    font-family: 'Work Sans'
+    font-family: 'Work Sans';
 }
 
 .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 
 .content-left {
     width: 50vw;
     height: 50vh;
     border-radius: 12px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     overflow: hidden;
 
     video {
-        object-fit: center;
+        -o-object-fit: center;
+           object-fit: center;
         width: 100%;
         height: auto;
         outline: none;
@@ -79,10 +115,14 @@
     width: 75px;
     height: 75px;
     background: none;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 
     &:hover {
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
     }
 }
 
@@ -90,11 +130,15 @@
     width: 75px;
     height: 75px;
     background: none;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     margin-left: 2vw;
 
     &:hover {
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
     }
 }
 
@@ -103,7 +147,8 @@
     height: 50vh;
     border-radius: 12px;
     background-color: black;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .header-container {
@@ -115,9 +160,15 @@
 }
 
 .cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .cta-text {
@@ -129,17 +180,22 @@
     padding: calc(1vh + 4px) calc(1vw + 4px);
     border: 4px solid white;
     border-radius: 4px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     font-size: 24px;
     font-weight: bold;
     font-family: source-code-pro, monospace;
 
     &:hover {
-        transform: scale(1.05) translateZ(0);
-        backface-visibility: hidden;
+        -webkit-transform: scale(1.05) translateZ(0);
+                transform: scale(1.05) translateZ(0);
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
         background-color: white;
         color: black;
-        box-shadow: 0 6px 12px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+        -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+                box-shadow: 0 6px 12px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
     }
 }
 
@@ -150,7 +206,6 @@
             width: 40vw;
             height: auto;
         }
-        
     }
 
     .content-left {
@@ -206,7 +261,8 @@
 
 @media only screen and (max-width: 600px) {
     .site-headers {
-    
+        margin-top: -20px;
+
         h1 {
             width: 80vw;
             height: auto;
@@ -230,7 +286,7 @@
     }
 
     .arrow-down {
-        margin-top: 5vh;
+        margin-top: 3vh;
         width: 40px;
         height: 40px;
     }

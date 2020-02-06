@@ -31,7 +31,7 @@ const Layout = (props) => {
 
                 <div className="content">
                     <div className="content-left">
-                        <video src={LoremIpsum} alt="" autoPlay muted loop />
+                        <video src={LoremIpsum} alt="" autoPlay={true} muted={true} loop />
                     </div>
                 </div>
 
