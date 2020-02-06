@@ -59,7 +59,7 @@
 }
 
 .content-left {
-    width: 40vw;
+    width: 50vw;
     height: 50vh;
     border-radius: 12px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -99,7 +99,7 @@
 }
 
 .video {
-    width: 40vw;
+    width: 50vw;
     height: 50vh;
     border-radius: 12px;
     background-color: black;
@@ -144,6 +144,15 @@
 }
 
 @media only screen and (max-width: 1600px) {
+    .site-headers {
+
+        h1 {
+            width: 40vw;
+            height: auto;
+        }
+        
+    }
+
     .content-left {
         width: 60vw;
         height: 40vh;
