@@ -149,6 +149,15 @@
     background-color: black;
     -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
             box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+    video {
+        -o-object-fit: center;
+            object-fit: center;
+        width: 100%;
+        height: auto;
+        outline: none;
+        background: none;
+    }
 }
 
 .header-container {

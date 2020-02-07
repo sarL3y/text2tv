@@ -1,7 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
+import videojs from 'video.js'
+
 // import Fade from 'react-reveal/Fade';
 
 import LoremIpsum from '../assets/loremipsum.mp4';
+import t2tv from '../assets/T2TV_LandingPage_Animatic_02.mp4';
 import { ReactComponent as ArrowDown } from '../assets/ArrowDown.svg';
 import { ReactComponent as ArrowRight } from '../assets/ArrowRight.svg';
 import { ReactComponent as Cover } from '../assets/default-monochrome.svg';
@@ -12,10 +15,18 @@ import '../sass/Layout.scss';
 
 const Layout = (props) => {
     const pageTwoRef = useRef(null);
+    // const loremIpsumRef = useRef();
+    // const t2tvRef = useRef();
 
     const handleScroll = () => {
         pageTwoRef.current.scrollIntoView({ behavior: 'smooth' });
     }
+
+    // useEffect(() => {
+    //     const loremIpsumPlayer = videojs(loremIpsumRef.current, { autoplay: true, muted: true }, () => {
+    //         loremIpsumPlayer.src()
+    //     })
+    // }
 
     return (
         <div className="layout-container">
@@ -48,7 +59,7 @@ const Layout = (props) => {
                 </div>
 
                 <div className="video">
-                    
+                    <video src={t2tv} alt="" autoPlay={true} muted={true} loop />
                 </div>
 
                 <div className="cta">
