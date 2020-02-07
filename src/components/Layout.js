@@ -42,7 +42,7 @@ const Layout = (props) => {
 
                 <div className="content">
                     <div className="content-left">
-                        <video src={LoremIpsum} alt="" autoPlay={true} muted={true} loop />
+                        <video src={LoremIpsum} alt="" autoPlay={true} muted={true} loop controls />
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@ const Layout = (props) => {
                 </div>
 
                 <div className="video">
-                    <video src={t2tv} alt="" autoPlay={true} muted={true} loop />
+                    <video src={t2tv} alt="" autoPlay={true} muted={true} loop controls />
                 </div>
 
                 <div className="cta">
