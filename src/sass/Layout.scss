@@ -15,7 +15,7 @@
     scroll-behavior: smooth;
 }
 
-.site-headers {
+.fullpage-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -29,53 +29,13 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
-
-    h1 {
-        width: 25vw;
-        height: auto;
-    }
+    height: 100vh;
+    width: auto;
 }
 
-.site-headline {
+.tagline {
     font-family: source-code-pro, monospace;
     font-weight: 500;
-}
-
-.page-one {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100vh;
-    width: auto;
-}
-
-.page-two {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100vh;
-    width: auto;
 }
 
 .work-sans {
@@ -163,9 +123,7 @@
     }
 }
 
-.header-container {
-    grid-area: header;
-}
+
 
 .carousel-container {
     grid-area: carousel;
@@ -213,14 +171,6 @@
 }
 
 @media only screen and (max-width: 1600px) {
-    .site-headers {
-
-        h1 {
-            width: 40vw;
-            height: auto;
-        }
-    }
-
     .content-left {
         width: 60vw;
         height: 40vh;
@@ -233,15 +183,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .site-headers {
-    
-        h1 {
-            width: 60vw;
-            height: auto;
-        }
-    }
-
-    .site-headline {
+    .tagline {
         font-size: 40px;
     }
 
@@ -273,16 +215,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .site-headers {
-        margin-top: -20px;
-
-        h1 {
-            width: 80vw;
-            height: auto;
-        }
-    }
-
-    .site-headline {
+    .tagline {
         font-size: 24px;
         margin: 20px 10px;
         text-align: center;
