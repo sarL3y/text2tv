@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../sass/Header.scss'; 
+import '../sass/Layout.scss'; 
 
 import { ReactComponent as ArrowRight } from '../assets/ArrowRight.svg';
 import PromoVid from '../assets/T2TV_LandingPage_Animatic_02.mp4';
@@ -9,7 +9,7 @@ const PromoVidSection = (props) => {
 
     return (
         <section ref={props.promoVidSectionRef} className="fullpage-container">
-            <div>
+            <div className="promo-section">
                 <header>
                     <h2 className="tagline">Here's your text on text2tv:</h2>
                 </header>

@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding-left: 2vw;
+    padding: 5vh 5vw;
 }
 
 .site-headers {
@@ -50,17 +49,17 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .header-layout {
-        width: 100vw;
-        height: 100vh;
-    }
+    // .header-layout {
+    //     width: 100vw;
+    //     height: 100vh;
+    // }
 
-    .site-headers {
-        margin-top: -20px;
+    // .site-headers {
+    //     margin-top: -20px;
 
-        h1 {
-            width: 80vw;
-            height: auto;
-        }
-    }
+    //     h1 {
+    //         width: 80vw;
+    //         height: auto;
+    //     }
+    // }
 }

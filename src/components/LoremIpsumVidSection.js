@@ -18,7 +18,7 @@ const LoremIpsumVidSection = (props) => {
 
             <NextPageButton {...props} />
         </section>
-    )
+    );
 };
 
 export default LoremIpsumVidSection;
